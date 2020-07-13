@@ -12,7 +12,7 @@ function sendMessage() {
   var mess;
   mess=$("#messaggio").val();
   if (mess) {
-    $("#main-chat").append('<div class="user">' + mess +'</div>');
+    $("#main-chat").append('<div class="user">' + mess + '<i class="drop-down fas fa-chevron-down"><div class="hidden drop-down-content"><ul><li>Elimina messaggio</li></ul></div></i>'+'</div>');
     $("#messaggio").val("");
     setTimeout(function () {
       $("#main-chat").append('<div class="answer"> ok! </div>');

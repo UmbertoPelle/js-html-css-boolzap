@@ -81,10 +81,12 @@ i:hover{
 #serchAddress{
   background-color: #fff;
   padding: 1%;
+  display: flex;
+  justify-content: center;
 }
 
 #serchAddress input{
-  width: 100%;
+  width: 90%;
 }
 
 #listaAddress{

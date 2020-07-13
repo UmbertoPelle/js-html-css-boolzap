@@ -35,10 +35,17 @@ function serchInAddress() {
   });
 }
 
+function clearAddress() {
+  $("#x").click(function(){
+    $("#listaAddress .friends").removeClass("hidden");
+  });
+}
+
 function init() {
   writeMes()
   keyBordEnter()
   serchInAddress()
+  clearAddress()
 }
 
 $(document).ready(init);

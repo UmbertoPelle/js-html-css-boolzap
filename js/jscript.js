@@ -46,9 +46,17 @@ function clearAddress() {
 function changeChat(){
   $(".friends").click(function(){
     var name= $(this).attr("id");
-    console.log(name);
     $(".top-chat #name h1").text(name);
   });
+}
+
+function deleteMessage(){
+  $(".drop-down.fas.fa-chevron-down").click(function () {
+    $(this).children().removeClass("hidden");
+  });
+  $(".drop-down-content").click(function(){
+    $(this).parents(".user").addClass("hidden")
+  })
 }
 
 function init() {
@@ -57,6 +65,7 @@ function init() {
   serchInAddress();
   clearAddress();
   changeChat();
+  deleteMessage()
 }
 
 $(document).ready(init);

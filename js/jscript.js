@@ -26,11 +26,12 @@ function sendMessage() {
 
 function serchInAddress() {
   $("#cercaAmici").keydown(function(){
-    var chiCerchi=$("#cercaAmici").val()
+    $("#x").removeClass("hidden");
+    var chiCerchi=$("#cercaAmici").val();
     if (event.which == 13) {
       $("#listaAddress .friends").addClass("hidden");
-      $(".friends[id^= "+ chiCerchi +"]").removeClass("hidden")
-      $("#cercaAmici").val("")
+      $(".friends[id^= "+ chiCerchi +"]").removeClass("hidden");
+      $("#cercaAmici").val("");
     }
   });
 }
@@ -38,6 +39,7 @@ function serchInAddress() {
 function clearAddress() {
   $("#x").click(function(){
     $("#listaAddress .friends").removeClass("hidden");
+    $("#x").addClass("hidden");
   });
 }
 

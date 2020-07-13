@@ -89,6 +89,11 @@ i:hover{
   width: 90%;
 }
 
+#x{
+  color: red;
+  margin-left: 2px;
+}
+
 #listaAddress{
   height: calc(100% - 127px);
   overflow-y: auto;

@@ -6,6 +6,7 @@
 
 body{
   overflow: hidden;
+  background-color: lightgreen;
 }
 
 i:hover{
@@ -24,7 +25,6 @@ i:hover{
   float: left;
   width: 25%;
   height: 100%;
-  background-color: red
 }
 
 .myProfile{
@@ -49,7 +49,7 @@ i:hover{
 #notification{
   height: 50px;
   background-color: lightblue;
-  padding-top: 2%;
+  padding: 2% 0;
   display: flex;
   align-items: center;
 }
@@ -86,6 +86,39 @@ i:hover{
 
 #serchAddress input{
   width: 100%;
+}
+
+#listaAddress{
+  height: calc(100% - 127px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.friends{
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.friends:hover{
+  background-color: #e4e4e4;
+}
+
+.friends .profile-img i{
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.anteprima h1{
+  font-size: 20px;
+}
+
+.anteprima p{
+  font-size: 15px;
+  color: grey;
 }
 /* chat messaggi */
 /* top chat */

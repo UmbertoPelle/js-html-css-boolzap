@@ -26,6 +26,67 @@ i:hover{
   height: 100%;
   background-color: red
 }
+
+.myProfile{
+  height: 50px;
+  background-color: #ccc;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: solid 1px black;
+}
+
+.myProfile i{
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.myProfile-icon i{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#notification{
+  height: 50px;
+  background-color: lightblue;
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.circle{
+  background-color: white;
+  border-radius: 50%;
+  width: 36px;
+}
+
+.circle i{
+  color: lightblue;
+  font-size: 30px;
+}
+
+.text-notification{
+  padding-left: 7px;
+}
+
+.text-notification h2{
+  font-size: 18px;
+}
+
+.text-notification p{
+  font-size: 15px;
+  color: grey;
+  text-decoration: underline;
+}
+
+#serchAddress{
+  background-color: #fff;
+  padding: 1%;
+}
+
+#serchAddress input{
+  width: 100%;
+}
 /* chat messaggi */
 /* top chat */
 #chat{
@@ -110,7 +171,7 @@ i:hover{
   align-items: center;
 }
 
-input{
+#inputMes input{
   width: 80%;
   border-radius: 15px;
   height: 70%;

@@ -24,9 +24,21 @@ function sendMessage() {
   }, 1000);
 }
 
+function serchInAddress() {
+  $("#cercaAmici").keydown(function(){
+    var chiCerchi=$("#cercaAmici").val()
+    if (event.which == 13) {
+      $("#listaAddress .friends").addClass("hidden");
+      $(".friends[id^= "+ chiCerchi +"]").removeClass("hidden")
+      $("#cercaAmici").val("")
+    }
+  });
+}
+
 function init() {
   writeMes()
   keyBordEnter()
+  serchInAddress()
 }
 
 $(document).ready(init);

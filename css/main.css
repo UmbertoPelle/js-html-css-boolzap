@@ -19,7 +19,6 @@ i:hover{
   height: 80vh;
 }
 
-
 /* address */
 #address{
   float: left;
@@ -215,4 +214,9 @@ button{
   border-radius: 15px;
   height: 70%;
   font-size: 25px;
+}
+
+
+.hidden{
+  display: none;
 }

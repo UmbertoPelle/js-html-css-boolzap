@@ -35,8 +35,8 @@ i:hover{
   border-right: solid 1px black;
 }
 
-.myProfile i{
-  font-size: 40px;
+.myProfile img{
+  width: 50px;
   margin-left: 10px;
 }
 
@@ -117,8 +117,8 @@ i:hover{
   background-color: #e4e4e4;
 }
 
-.friends .profile-img i{
-  font-size: 30px;
+.friends .profile-img img{
+  width: 40px;
   margin: 0 5px;
 }
 
@@ -160,8 +160,8 @@ i:hover{
   width: 25%;
 }
 
-.friend i{
-  font-size: 40px;
+.friend img{
+  width:50px;
   margin-left: 10px;
 }
 

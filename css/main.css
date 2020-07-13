@@ -237,19 +237,13 @@ i:hover{
   background-color: #ccc;
   justify-content: space-around;
   align-items: center;
+  color: #1010106b;
 }
 
 #inputMes input{
   width: 80%;
   border-radius: 15px;
   height: 70%;
-}
-
-button{
-  width: 15%;
-  border-radius: 15px;
-  height: 70%;
-  font-size: 25px;
 }
 
 

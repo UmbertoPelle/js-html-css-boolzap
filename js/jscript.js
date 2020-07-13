@@ -1,13 +1,8 @@
-function writeMes(){
-
-  $("#inviaMes").click(sendMessage);
-
-}
 
 function keyBordEnter() {
 
   $("#messaggio").keydown(function(){
-    if (event.which == 13) {
+    if (event.which == 13 || event.which == 76) {
       sendMessage()
     }
   });
@@ -16,12 +11,14 @@ function keyBordEnter() {
 function sendMessage() {
   var mess;
   mess=$("#messaggio").val();
-  console.log(mess);
-  $("#main-chat").append('<div class="user">' + mess +'</div>');
-  $("#messaggio").val("");
-  setTimeout(function () {
-    $("#main-chat").append('<div class="answer"> ok! </div>');
-  }, 1000);
+  if (mess!="") {
+    $("#main-chat").append('<div class="user">' + mess +'</div>');
+    $("#messaggio").val("");
+    setTimeout(function () {
+      $("#main-chat").append('<div class="answer"> ok! </div>');
+    }, 1000);
+  }
+
 }
 
 function serchInAddress() {
@@ -47,6 +44,7 @@ function changeChat(){
   $(".friends").click(function(){
     var name= $(this).attr("id");
     $(".top-chat #name h1").text(name);
+    $("#content").text("");
   });
 }
 
@@ -60,7 +58,6 @@ function deleteMessage(){
 }
 
 function init() {
-  writeMes();
   keyBordEnter();
   serchInAddress();
   clearAddress();

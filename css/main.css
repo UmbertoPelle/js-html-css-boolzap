@@ -94,6 +94,10 @@ i:hover{
   margin-left: 2px;
 }
 
+#x:hover{
+  cursor: pointer;
+}
+
 #listaAddress{
   height: calc(100% - 127px);
   overflow-y: auto;

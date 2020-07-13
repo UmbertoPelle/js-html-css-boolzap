@@ -43,11 +43,20 @@ function clearAddress() {
   });
 }
 
+function changeChat(){
+  $(".friends").click(function(){
+    var name= $(this).attr("id");
+    console.log(name);
+    $(".top-chat #name h1").text(name);
+  });
+}
+
 function init() {
-  writeMes()
-  keyBordEnter()
-  serchInAddress()
-  clearAddress()
+  writeMes();
+  keyBordEnter();
+  serchInAddress();
+  clearAddress();
+  changeChat();
 }
 
 $(document).ready(init);

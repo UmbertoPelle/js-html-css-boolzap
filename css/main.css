@@ -3,23 +3,72 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   overflow: hidden;
+}
+
+i:hover{
+  cursor: pointer;
 }
 
 #container{
   width: 80%;
   margin: 10%;
-  height: 90vh;
+  height: 80vh;
 }
 
 /* chat messaggi */
+/* top chat */
 #chat{
   height: 90%;
   background-image: url("https://external-preview.redd.it/rEwFriCkfAtjOb5b-23b4tGGVcuvfaBqamYNJrgxnLM.png?auto=webp&s=f3bf0b5c90e4c5fda12ff2139781c854554fd198");
   overflow-y: auto;
+  overflow-x:hidden;
+
 }
 
+.top-chat{
+  height: 50px;
+  background-color: #ccc;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 17%;
+}
+
+.friend i{
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+#name{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+
+#name h1{
+  font-size: 25px;
+}
+
+#name p{
+  font-size: 15px;
+  color: grey
+}
+
+.icon i{
+  margin-right: 27px;
+  color: slategrey;
+}
+/* main chat */
 .answer{
   margin-right: 80%;
   background-color: #f5eeee;

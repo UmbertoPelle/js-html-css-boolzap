@@ -11,7 +11,7 @@ function keyBordEnter() {
 function sendMessage() {
   var mess;
   mess=$("#messaggio").val();
-  if (mess!="") {
+  if (mess) {
     $("#main-chat").append('<div class="user">' + mess +'</div>');
     $("#messaggio").val("");
     setTimeout(function () {

@@ -37,6 +37,7 @@ function clearAddress() {
   $("#x").click(function(){
     $("#listaAddress .friends").removeClass("hidden");
     $("#x").addClass("hidden");
+    $("#cercaAmici").val("");
   });
 }
 

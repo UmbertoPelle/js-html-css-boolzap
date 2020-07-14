@@ -50,8 +50,29 @@ function changeChat(){
   });
 }
 
-function deleteMessage(){
-  $(".drop-down.fas.fa-chevron-down").click(function () {
+// function deleteMessage(){
+//   $(".drop-down.fas.fa-chevron-down").click(function () {
+//     $(".drop-down.fas.fa-chevron-down").children().addClass("hidden");
+//     $(".drop-down.fas.fa-chevron-down").children().removeClass("open");
+//     if ($(this).children().hasClass("open")) {
+//       $(this).children().addClass("hidden");
+//       $(this).children().removeClass("open");
+//     }else {
+//       $(this).children().removeClass("hidden");
+//       $(this).children().addClass("open");
+//     }
+//   });
+//   $(".drop-down-content").click(function(){
+//     $(this).parents(".user").addClass("hidden")
+//   })
+// }
+
+function deleteNewMessage() {
+  $(document).on('click', '.drop-down.fas.fa-chevron-down', function() {
+    //nascondo tutti i pannelli delle opzioni
+    $(".drop-down.fas.fa-chevron-down").children().addClass("hidden");
+    $(".drop-down.fas.fa-chevron-down").children().removeClass("open");
+		// recupero il pannello delle opzioni corrispondente e lo mostro/nascondo
     if ($(this).children().hasClass("open")) {
       $(this).children().addClass("hidden");
       $(this).children().removeClass("open");
@@ -59,10 +80,10 @@ function deleteMessage(){
       $(this).children().removeClass("hidden");
       $(this).children().addClass("open");
     }
+    $(".drop-down-content").click(function(){
+      $(this).parents(".user").addClass("hidden")
+    });
   });
-  $(".drop-down-content").click(function(){
-    $(this).parents(".user").addClass("hidden")
-  })
 }
 
 function init() {
@@ -70,7 +91,8 @@ function init() {
   serchInAddress();
   clearAddress();
   changeChat();
-  deleteMessage();
+  // deleteMessage();
+  deleteNewMessage();
 }
 
 $(document).ready(init);

@@ -12,10 +12,10 @@ function sendMessage() {
   var mess;
   mess=$("#messaggio").val();
   if (mess) {
-    $("#main-chat").append('<div class="user">' + mess + '<i class="drop-down fas fa-chevron-down"><div class="hidden drop-down-content"><ul><li>Elimina messaggio</li></ul></div></i>'+'</div>');
+    $("#content").append('<div class="user">' + mess + '<i class="drop-down fas fa-chevron-down"><div class="hidden drop-down-content"><ul><li>Elimina messaggio</li></ul></div></i>'+'</div>');
     $("#messaggio").val("");
     setTimeout(function () {
-      $("#main-chat").append('<div class="answer"> ok! </div>');
+      $("#content").append('<div class="answer"> ok! </div>');
     }, 1000);
   }
 
@@ -49,32 +49,8 @@ function changeChat(){
     $(".top-chat .friend .profile-img img").attr("src",img);
     $("#chat #content").text("");
   });
-  // $(".friends").click(function(){
-  //   var name= $(this).attr("id");
-  //   var img=$(this).children().children("img").attr("src");
-  //   $(".top-chat #name h1").text(name);
-  //   $(".top-chat .friend .profile-img img").attr("src",img);
-  //   $("#content").text("");
-  //
-  // });
-}
 
-// function deleteMessage(){
-//   $(".drop-down.fas.fa-chevron-down").click(function () {
-//     $(".drop-down.fas.fa-chevron-down").children().addClass("hidden");
-//     $(".drop-down.fas.fa-chevron-down").children().removeClass("open");
-//     if ($(this).children().hasClass("open")) {
-//       $(this).children().addClass("hidden");
-//       $(this).children().removeClass("open");
-//     }else {
-//       $(this).children().removeClass("hidden");
-//       $(this).children().addClass("open");
-//     }
-//   });
-//   $(".drop-down-content").click(function(){
-//     $(this).parents(".user").addClass("hidden")
-//   })
-// }
+}
 
 function deleteNewMessage() {
   $(document).on('click', '.drop-down.fas.fa-chevron-down', function() {

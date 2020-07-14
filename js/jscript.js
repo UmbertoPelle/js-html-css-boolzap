@@ -27,7 +27,7 @@ function serchInAddress() {
     var chiCerchi=$("#cercaAmici").val();
     if (event.which == 13) {
       $("#listaAddress .friends").addClass("hidden");
-      $(".friends[id^= "+ chiCerchi +"]").removeClass("hidden");
+      $(".friends[id*= "+ chiCerchi +"]").removeClass("hidden");
       $("#cercaAmici").val("");
     }
   });

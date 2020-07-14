@@ -135,6 +135,7 @@ header{
 
 .friends:hover{
   background-color: #e4e4e4;
+  cursor: pointer;
 }
 
 .friends .profile-img img{

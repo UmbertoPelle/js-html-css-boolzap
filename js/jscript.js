@@ -41,13 +41,21 @@ function clearAddress() {
 }
 
 function changeChat(){
-  $(".friends").click(function(){
+  $(document).on('click','.friends', function(){
     var name= $(this).attr("id");
     var img=$(this).children().children("img").attr("src");
     $(".top-chat #name h1").text(name);
     $(".top-chat .friend .profile-img img").attr("src",img);
     $("#content").text("");
   });
+  // $(".friends").click(function(){
+  //   var name= $(this).attr("id");
+  //   var img=$(this).children().children("img").attr("src");
+  //   $(".top-chat #name h1").text(name);
+  //   $(".top-chat .friend .profile-img img").attr("src",img);
+  //   $("#content").text("");
+  //
+  // });
 }
 
 // function deleteMessage(){
@@ -71,7 +79,6 @@ function deleteNewMessage() {
   $(document).on('click', '.drop-down.fas.fa-chevron-down', function() {
     //nascondo tutti i pannelli delle opzioni
     $(".drop-down.fas.fa-chevron-down").children().addClass("hidden");
-    $(".drop-down.fas.fa-chevron-down").children().removeClass("open");
 		// recupero il pannello delle opzioni corrispondente e lo mostro/nascondo
     if ($(this).children().hasClass("open")) {
       $(this).children().addClass("hidden");

@@ -44,16 +44,21 @@ function changeChat(){
   $(".friends").click(function(){
     var name= $(this).attr("id");
     var img=$(this).children().children("img").attr("src");
-    console.log(img);
     $(".top-chat #name h1").text(name);
-    $("top-chat .friend .profile-img img").attr("src",img);
+    $(".top-chat .friend .profile-img img").attr("src",img);
     $("#content").text("");
   });
 }
 
 function deleteMessage(){
   $(".drop-down.fas.fa-chevron-down").click(function () {
-    $(this).children().removeClass("hidden");
+    if ($(this).children().hasClass("open")) {
+      $(this).children().addClass("hidden");
+      $(this).children().removeClass("open");
+    }else {
+      $(this).children().removeClass("hidden");
+      $(this).children().addClass("open");
+    }
   });
   $(".drop-down-content").click(function(){
     $(this).parents(".user").addClass("hidden")

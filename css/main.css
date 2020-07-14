@@ -29,6 +29,8 @@ header{
   background-color: #387;
 }
 
+.open{}
+
 /* address */
 #address{
   float: left;
@@ -209,7 +211,7 @@ header{
   position: relative;
   float: left;
   clear: both;
-  min-width: 25%;
+  min-width: 15%;
   max-width: 25%;
   margin: 10px;
   padding: 10px;

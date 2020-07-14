@@ -299,7 +299,7 @@ header{
   #name p, .icon i{
     font-size: 9px;
   }
-  .icon i{
+  .icon i , .myProfile-icon i{
     margin-right: 4px;
   }
 }

@@ -276,3 +276,26 @@ header{
 .hidden{
   display: none;
 }
+
+@media all and (max-width:800px) {
+  #notification{
+    display: none;
+  }
+
+  .friends .anteprima p{
+    display: none;
+  }
+
+  .myProfile-icon i{
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width:600px) {
+  #name p, .icon i{
+    font-size: 9px;
+  }
+  .icon i{
+    margin-right: 4px;
+  }
+}

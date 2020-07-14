@@ -41,12 +41,12 @@ function clearAddress() {
 }
 
 function changeChat(){
-  $(document).on('click','.friends', function(){
+  $(document).on('click','.friends', function() {
     var name= $(this).attr("id");
     var img=$(this).children().children("img").attr("src");
     $(".top-chat #name h1").text(name);
     $(".top-chat .friend .profile-img img").attr("src",img);
-    $("#content").text("");
+    $("#chat #content").text("");
   });
   // $(".friends").click(function(){
   //   var name= $(this).attr("id");

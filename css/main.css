@@ -6,7 +6,7 @@
 
 body{
   overflow: hidden;
-  background-color: lightgreen;
+  background-color: #ddd;
 }
 
 i:hover{
@@ -17,6 +17,16 @@ i:hover{
   width: 80%;
   margin: 10vh 10%;
   height: 80vh;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 0;
+  height: 150px;
+  width: 100vw;
+  z-index: -1;
+  background-color: #387;
 }
 
 /* address */
@@ -72,21 +82,29 @@ i:hover{
   font-size: 18px;
 }
 
-.text-notification p{
+.text-notification a{
   font-size: 15px;
   color: grey;
-  text-decoration: underline;
 }
 
 #serchAddress{
   background-color: #fff;
-  padding: 1%;
+  padding: 2%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px lightblue;
 }
 
 #serchAddress input{
   width: 90%;
+  border: 0;
+  border-bottom: solid 1px;
+}
+
+#serchAddress i{
+  font-size: 15px;
+  color: slategrey;
 }
 
 #x{
@@ -186,23 +204,22 @@ i:hover{
   color: slategrey;
 }
 /* main chat */
-.answer{
-  margin-right: 80%;
+
+.answer,.user{
+  position: relative;
+  float: left;
+  clear: both;
+  min-width: 25%;
+  max-width: 25%;
+  margin: 10px;
+  padding: 10px;
   background-color: #f5eeee;
-  text-align: center;
-  padding: 1%;
-  border-radius: 15px;
-  margin-top: 5px;
+  border-radius: 10px;
 }
 
 .user{
+  float: right;
   background-color: green;
-  text-align: center;
-  padding: 1%;
-  margin-left: 80%;
-  border-radius: 15px;
-  margin-top: 5px;
-  position: relative;
 }
 
 .fa-chevron-down{

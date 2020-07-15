@@ -76,6 +76,14 @@ function deleteNewMessage() {
       $(this).parents(".user").remove();
     });
 
+    var nome = $(".friend #name h1").text().toLowerCase();
+    $(".friends").each(function () {
+      if ($(this).attr("id") == nome) {
+        var temp = $("#content").children().clone();
+        $(this).find(".storyChat").html(temp);
+        console.log(temp);
+      }
+    });
   });
 }
 

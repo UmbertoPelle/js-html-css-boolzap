@@ -2,7 +2,7 @@
 function keyBordEnter() {
 
   $("#messaggio").keydown(function(){
-    if (event.which == 13 || event.which == 76) {
+    if (event.which == 13) {
       sendMessage()
     }
   });
@@ -45,9 +45,11 @@ function changeChat(){
   $(document).on('click','.friends', function() {
     var name= $(this).find(".anteprima h1").text();
     var img=$(this).children().children("img").attr("src");
+    var story = $(this).find(".storyChat").children().clone()
     $(".top-chat #name h1").text(name);
     $(".top-chat .friend .profile-img img").attr("src",img);
-    $("#chat #content").text("");
+    $("#chat #content").text("")
+    $("#chat #content").append(story);
   });
 
 }

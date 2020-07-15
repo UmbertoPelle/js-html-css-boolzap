@@ -24,7 +24,7 @@ function sendMessage() {
 function serchInAddress() {
   $("#cercaAmici").keydown(function(){
     $("#x").removeClass("hidden");
-    var chiCerchi=$("#cercaAmici").val();
+    var chiCerchi=$("#cercaAmici").val().toLowerCase();
     if (event.which == 13) {
       $("#listaAddress .friends").addClass("hidden");
       $(".friends[id*= "+ chiCerchi +"]").removeClass("hidden");
@@ -43,7 +43,7 @@ function clearAddress() {
 
 function changeChat(){
   $(document).on('click','.friends', function() {
-    var name= $(this).attr("id");
+    var name= $(this).find(".anteprima h1").text();
     var img=$(this).children().children("img").attr("src");
     $(".top-chat #name h1").text(name);
     $(".top-chat .friend .profile-img img").attr("src",img);

@@ -73,8 +73,9 @@ function deleteNewMessage() {
       $(this).children().addClass("open");
     }
     $(".drop-down-content").click(function(){
-      $(this).parents(".user").addClass("hidden")
+      $(this).parents(".user").remove();
     });
+
   });
 }
 
@@ -83,7 +84,6 @@ function init() {
   serchInAddress();
   clearAddress();
   changeChat();
-  // deleteMessage();
   deleteNewMessage();
 }
 

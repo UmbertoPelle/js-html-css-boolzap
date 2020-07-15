@@ -42,6 +42,7 @@ header{
   float: left;
   width: 25%;
   height: 100%;
+  border-right: solid 1px black;
 }
 
 .myProfile{
@@ -50,7 +51,6 @@ header{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  border-right: solid 1px black;
 }
 
 .myProfile img{
@@ -139,7 +139,7 @@ header{
   align-items: center;
 }
 
-.friends:hover{
+#listaAddress .friends:hover{
   background-color: #e4e4e4;
   cursor: pointer;
 }
@@ -233,6 +233,7 @@ header{
 .user{
   float: right;
   background-color: green;
+  color: #fff;
 }
 
 .fa-chevron-down{
@@ -240,6 +241,7 @@ header{
   top: 11px;
   right: 5px;
   display: none;
+  color: #000;
 }
 
 .drop-down-content{
@@ -285,6 +287,11 @@ header{
 .hidden{
   display: none;
 }
+
+.focus{
+  background-color: #e4e4e4;
+}
+
 
 @media all and (max-width:800px) {
   #notification{

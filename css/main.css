@@ -125,7 +125,7 @@ header{
 }
 
 #listaAddress{
-  height: calc(100% - 132px);
+  height: calc(100% - 134px);
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #fff;
@@ -234,12 +234,13 @@ header{
   float: right;
   background-color: green;
   color: #fff;
+  padding-right: 17px;
 }
 
 .fa-chevron-down{
   position: absolute;
   top: 11px;
-  right: 5px;
+  right: 0px;
   display: none;
   color: #000;
 }
@@ -304,6 +305,10 @@ header{
 
   .myProfile-icon i{
     font-size: 10px;
+  }
+
+  #listaAddress{
+    height: calc(100% - 76px);
   }
 }
 

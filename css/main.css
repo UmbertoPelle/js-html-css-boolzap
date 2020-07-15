@@ -239,6 +239,7 @@ header{
   position: absolute;
   top: 11px;
   right: 5px;
+  display: none;
 }
 
 .drop-down-content{
@@ -250,6 +251,10 @@ header{
   width: 203px;
   border-radius: 5px;
   z-index: 10;
+}
+
+.user:hover .fa-chevron-down{
+  display: block
 }
 
 .drop-down-content ul{

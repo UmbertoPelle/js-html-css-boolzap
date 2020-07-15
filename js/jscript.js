@@ -18,7 +18,13 @@ function sendMessage() {
       $("#content").append('<div class="answer"> ok! </div>');
     }, 1000);
   }
-
+  var nome = $(".friend #name h1").text().toLowerCase();
+  $(".friends").each(function () {
+    if ($(this).attr("id") == nome) {
+      $(this).find(".storyChat").append('<div class="user">' + mess + '<i class="drop-down fas fa-chevron-down"><div class="hidden drop-down-content"><ul><li>Elimina messaggio</li></ul></div></i>'+'</div>')
+      $(this).find(".storyChat").append('<div class="answer"> ok! </div>');
+    }
+  });
 }
 
 function serchInAddress() {

@@ -87,12 +87,26 @@ function deleteNewMessage() {
   });
 }
 
+function chatFocus() {
+  var nome = $(".friend #name h1").text().toLowerCase();
+  $(".friends").each(function () {
+    if ($(this).attr("id") == nome) {
+      $(this).css("background-color","#e4e4e4");
+    }
+  });
+  $(document).on("click",".friends", function () {
+    $(".friends").css("background-color","#fff");
+    $(this).css("background-color","#e4e4e4");
+  })
+
+}
 function init() {
   keyBordEnter();
   serchInAddress();
   clearAddress();
   changeChat();
   deleteNewMessage();
+  chatFocus();
 }
 
 $(document).ready(init);

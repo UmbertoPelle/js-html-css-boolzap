@@ -97,7 +97,8 @@ function chatFocus() {
   $(document).on("click",".friends", function () {
     $(".friends").removeClass("focus");
     $(this).addClass("focus");
-  })
+  });
+
 
 }
 

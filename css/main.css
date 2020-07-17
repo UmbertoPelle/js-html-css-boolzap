@@ -37,6 +37,25 @@ header{
 
 .open{}
 
+/* load */
+#load{
+  height: 100vh;
+  width: 100vw;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#load i{
+  font-size: 50px;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-iteration-count: 100;
+  animation-timing-function: initial;
+}
+
 /* address */
 #address{
   float: left;
@@ -284,7 +303,6 @@ header{
   height: 70%;
 }
 
-
 .hidden{
   display: none;
 }
@@ -318,5 +336,12 @@ header{
   }
   .icon i , .myProfile-icon i{
     margin-right: 4px;
+  }
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(1turn);
+
   }
 }

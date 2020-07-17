@@ -102,6 +102,12 @@ function chatFocus() {
 
 }
 
+function load() {
+  setTimeout(function () {
+    $("#load").css("display", "none");
+  },2000);
+}
+
 function init() {
   keyBordEnter();
   serchInAddress();
@@ -109,6 +115,7 @@ function init() {
   changeChat();
   deleteNewMessage();
   chatFocus();
+  load();
 }
 
 $(document).ready(init);

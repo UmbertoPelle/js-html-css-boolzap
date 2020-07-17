@@ -45,6 +45,8 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+  position: relative;
 }
 
 #load i{
@@ -148,6 +150,7 @@ header{
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #fff;
+  position: relative;
 }
 
 .friends{
@@ -156,6 +159,8 @@ header{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 #listaAddress .friends:hover{
@@ -175,6 +180,13 @@ header{
 .anteprima p{
   font-size: 15px;
   color: grey;
+}
+
+#empty{
+  font-size: 17px;
+  position: absolute;
+  top: 5px;
+  z-index: 0;
 }
 /* chat messaggi */
 /* top chat */

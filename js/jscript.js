@@ -29,11 +29,11 @@ function sendMessage() {
 
 function serchInAddress() {
   $("#cercaAmici").keydown(function(){
-    $("#x").removeClass("hidden");
     var chiCerchi=$("#cercaAmici").val().toLowerCase();
-    if (event.which == 13) {
+    if (event.which == 13 && chiCerchi) {
+      $("#x").removeClass("hidden");
       $("#listaAddress .friends").addClass("hidden");
-      $(".friends[id*= "+ chiCerchi +"]").removeClass("hidden");
+      $("#listaAddress .friends[id*= "+ chiCerchi +"]").removeClass("hidden");
       $("#cercaAmici").val("");
     }
   });
